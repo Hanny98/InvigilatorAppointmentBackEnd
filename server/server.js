@@ -1,4 +1,3 @@
-import "dotenv/config";
 import Express from "express";
 import config from "./config.js";
 import errorHandler from "./util/errorHandler.js";
