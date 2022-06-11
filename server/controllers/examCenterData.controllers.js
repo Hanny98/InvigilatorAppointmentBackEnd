@@ -491,10 +491,10 @@ export async function reviewExamCenterData(req, res, next) {
 
     if (decision === "approve") {
       review = "Completed";
-      msg = "Assignment task of current Exam Center Data has been approved";
+      msg = "Assignment task of current Exam Center has been approved";
     } else {
       review = "Incomplete";
-      msg = "Assignment task of current Exam Center Data has been rejected";
+      msg = "Assignment task of current Exam Center has been rejected";
     }
 
     //update the collection status in the assignmenttask

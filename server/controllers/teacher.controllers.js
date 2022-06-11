@@ -415,7 +415,7 @@ export async function updateTeacher(req, res, next) {
     if (isNullOrUndefined(state) || state === "") {
       return res.status(200).send({
         status: false,
-        msg: "Invalid City",
+        msg: "Invalid State",
       });
     }
     if (isNullOrUndefined(teacherPositionCode) || teacherPositionCode === "") {
