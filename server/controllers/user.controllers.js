@@ -79,6 +79,11 @@ export async function getUsers(req, res, next) {
         },
       },
       {
+        $sort: {
+          _id: -1,
+        },
+      },
+      {
         $skip: skip,
       },
       {
