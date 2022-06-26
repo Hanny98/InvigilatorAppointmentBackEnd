@@ -338,6 +338,15 @@ export async function updateTeacher(req, res, next) {
       });
     }
     if (
+      !validator.isLength(icNumber, 12, 12) ||
+      icNumber.match(/[^0-9]/ !== null)
+    ) {
+      return res.status(200).send({
+        status: false,
+        msg: "Invalid IC Number Format",
+      });
+    }
+    if (
       !validator.isLength(teacherPhoneNumber, 10, 11) ||
       teacherPhoneNumber.match(/^01/) === null
     ) {
